@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>点击注册</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	  <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon"/>
+	  <script>
+	  //设置当前页面所用的rem；基于iphone5的尺寸进行开发，适配其他机型
+		  var winWidth = window.innerWidth;
+		  console.log(winWidth);
+		  var fontSize = Math.floor( winWidth/320*100 );
+		  console.log(fontSize);
+		  var html = document.documentElement;
+		  html.style.fontSize = fontSize + 'px';
+		  window.onresize = function(){
+			var winWidth = window.innerWidth;
+			var fontSize = Math.floor( winWidth/320*100 );//设置与当前尺寸页面适应的字号
+			var html = document.documentElement;
+			html.style.fontSize = fontSize + 'px';
+			console.log(html.tagName);
+		  };
+	  </script>
+  </head>
+  <style type="text/css">
+	  *{
+		  margin: 0;
+		  padding:0;
+	  }
+	  html,body{
+		  width:100%;
+		  font-size:100px;
+	  }
+	  .page-group {
+		  width:100%;
+		  height:100%;
+	  }
+	  .page-current{
+		  width:100%;
+		  height:100%;
+	  }
+  	input{
+  		padding: 0;
+  		margin: 0;
+  		border: 1px;
+  		}
+  </style>
+  <body>
+    <div class="page-group">
+		<img src="../img/share1-bg.png" alt="" style="width:100%;">
+        <div class="page page-current" style="width:100%;height:100%;position: absolute;top:0;background: transparent;">
+        <!-- 你的html代码 -->
+            <input class="phone" placeholder="请输入您的手机号" type="number"  name="myInput" oninput="if(value.length>11)value=value.slice(0,11)" class="phone" style=" text-indent: .15rem;border-radius: .05rem; display: block;  width:2.4rem;margin-top: 96%;height: .33rem;line-height: .33rem;margin-left: .4rem;" />
+            <input class="VCODE" placeholder="请输入验证码" type="number"  name="myInput" oninput="if(value.length>6)value=value.slice(0,6)" class="yanz"  style="display: inline-block;  text-indent:.15rem;border-radius: .05rem;  width: 1.48rem;margin-top: .18rem;height: .33rem;line-height: .33rem;margin-left: .4rem;float:left" />
+            <img class="yanzma" src="../img/yan-1.png" style="height: .33rem;display: inline-block;line-height: .33rem;float:left;margin-top: .18rem;"/>
+            <input class="PASSWORD" placeholder="请输入6-16位密码" class="password" oninput="if(value.length>16) value=value.slice(0,16)"  onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" style=" text-indent: .15rem;border-radius: .05rem; display: block;  width: 2.4rem;margin-top: .70rem;height: .33rem;line-height: .33rem;margin-left: .4rem;" />
+            <img class="in" src="../img/share1_sign_now.png" style="margin: auto;width: 1.3rem;margin-left: .92rem;margin-top: 2%;"/>
+        </div>
+    </div>
+  </body>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+      $('.yanzma').unbind('click').click(function(){
+      	var USERNAME=$('.phone').val();//获取验证码
+      		var data=
+         {
+    	'PHONE':USERNAME,
+    	'TYPE':'01'
+         }
+         console.log(data)
+        jQuery.ajax({
+					type:"POST",
+//					url:"http://192.168.199.169:8080/jurongyi/appuser/getPhoneVerification",					
+					url:"http://api.runnongjinfu.com.cn:8081/jurongyi-service-pro/appuser/getPhoneVerification",
+//					url:"http://mobile.api.runnongjinfu.com.cn:8081/jurongyi-service-pro/appuser/getPhoneVerification",				
+					  async :false,
+            dataType:'json',
+					  data:data,
+					  success:function(data){
+						console.log(data);
+					  alert(data.result)
+					}
+	    });	         
+      });
+    	$('.in').unbind('click').click(function(){
+    		var USERNAME=$('.phone').val();
+    		var VCODE=$('.VCODE').val();
+    		var PASSWORD=$('.PASSWORD').val();
+    		if(USERNAME==''){
+							alert('手机号不能为空')
+						}else if(VCODE==''){
+							alert('验证码不能为空')
+						}else if(PASSWORD==''){
+							alert('密码不能为空')
+						}else if(USERNAME.length<11){
+							 alert('请输入11位手机号')	
+						}else if(6>PASSWORD.length||PASSWORD.length>16) {
+				alert('请输入6-16位密码')
+			}
+            else{
+       var data=
+         {
+    	'USERNAME':USERNAME,
+    	'VCODE':VCODE,
+    	'PASSWORD':PASSWORD,
+    	'TYPE':'01'
+         }
+         console.log(data)
+        jQuery.ajax({
+					type:"POST",
+//					url:"http://192.168.199.169:8080/jurongyi/appuser/registOrForgetAppUser",		
+					url:"http://api.runnongjinfu.com.cn:8081/jurongyi-service-pro/appuser/registOrForgetAppUser",
+//					url:"http://mobile.api.runnongjinfu.com.cn:8081/jurongyi-service-pro/appuser/registOrForgetAppUser",
+					async :false,
+                    dataType:'json',
+					  data:data,
+//					  xhrFields: {
+//                    withCredentials: true
+//                    },
+//          crossDomain: true,
+					  success:function(data){
+						console.log(data);						
+					  alert(data.result);
+//					   var  a="用户注册成功";
+					  if(data.result=="用户注册成功"){
+					    	$.cookie('phone_number',USERNAME);
+					    	window.location="share0.html";
+					    }
+					}
+	    });	         
+		  }
+					
+    	 
+    	});
+
+	  /**
+	   *               ii.                                         ;9ABH,
+	   *              SA391,                                    .r9GG35&G
+	   *              &#ii13Gh;                               i3X31i;:,rB1
+	   *              iMs,:,i5895,                         .5G91:,:;:s1:8A
+	   *               33::::,,;5G5,                     ,58Si,,:::,sHX;iH1
+	   *                Sr.,:;rs13BBX35hh11511h5Shhh5S3GAXS:.,,::,,1AG3i,GG
+	   *                .G51S511sr;;iiiishS8G89Shsrrsh59S;.,,,,,..5A85Si,h8
+	   *               :SB9s:,............................,,,.,,,SASh53h,1G.
+	   *            .r18S;..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,....,,.1H315199,rX,
+	   *          ;S89s,..,,,,,,,,,,,,,,,,,,,,,,,....,,.......,,,;r1ShS8,;Xi
+	   *        i55s:.........,,,,,,,,,,,,,,,,.,,,......,.....,,....r9&5.:X1
+	   *       59;.....,.     .,,,,,,,,,,,...        .............,..:1;.:&s
+	   *      s8,..;53S5S3s.   .,,,,,,,.,..      i15S5h1:.........,,,..,,:99
+	   *      93.:39s:rSGB@A;  ..,,,,.....    .SG3hhh9G&BGi..,,,,,,,,,,,,.,83
+	   *      G5.G8  9#@@@@@X. .,,,,,,.....  iA9,.S&B###@@Mr...,,,,,,,,..,.;Xh
+	   *      Gs.X8 S@@@@@@@B:..,,,,,,,,,,. rA1 ,A@@@@@@@@@H:........,,,,,,.iX:
+	   *     ;9. ,8A#@@@@@@#5,.,,,,,,,,,... 9A. 8@@@@@@@@@@M;    ....,,,,,,,,S8
+	   *     X3    iS8XAHH8s.,,,,,,,,,,...,..58hH@@@@@@@@@Hs       ...,,,,,,,:Gs
+	   *    r8,        ,,,...,,,,,,,,,,.....  ,h8XABMMHX3r.          .,,,,,,,.rX:
+	   *   :9, .    .:,..,:;;;::,.,,,,,..          .,,.               ..,,,,,,.59
+	   *  .Si      ,:.i8HBMMMMMB&5,....                    .            .,,,,,.sMr
+	   *  SS       :: h@@@@@@@@@@#; .                     ...  .         ..,,,,iM5
+	   *  91  .    ;:.,1&@@@@@@MXs.                            .          .,,:,:&S
+	   *  hS ....  .:;,,,i3MMS1;..,..... .  .     ...                     ..,:,.99
+	   *  ,8; ..... .,:,..,8Ms:;,,,...                                     .,::.83
+	   *   s&: ....  .sS553B@@HX3s;,.    .,;13h.                            .:::&1
+	   *    SXr  .  ...;s3G99XA&X88Shss11155hi.                             ,;:h&,
+	   *     iH8:  . ..   ,;iiii;,::,,,,,.                                 .;irHA
+	   *      ,8X5;   .     .......                                       ,;iihS8Gi
+	   *         1831,                                                 .,;irrrrrs&@
+	   *           ;5A8r.                                            .:;iiiiirrss1H
+	   *             :X@H3s.......                                .,:;iii;iiiiirsrh
+	   *              r#h:;,...,,.. .,,:;;;;;:::,...              .:;;;;;;iiiirrss1
+	   *             ,M8 ..,....,.....,,::::::,,...         .     .,;;;iiiiiirss11h
+	   *             8B;.,,,,,,,.,.....          .           ..   .:;;;;iirrsss111h
+	   *            i@5,:::,,,,,,,,.... .                   . .:::;;;;;irrrss111111
+	   *            9Bi,:,,,,......                        ..r91;;;;;iirrsss1ss1111
+	   */
+
+
+
+	  /**
+	   *                    .::::.
+	   *                  .::::::::.
+	   *                 :::::::::::  FUCK YOU
+	   *             ..:::::::::::'
+	   *           '::::::::::::'
+	   *             .::::::::::
+	   *        '::::::::::::::..
+	   *             ..::::::::::::.
+	   *           ``::::::::::::::::
+	   *            ::::``:::::::::'        .:::.
+	   *           ::::'   ':::::'       .::::::::.
+	   *         .::::'      ::::     .:::::::'::::.
+	   *        .:::'       :::::  .:::::::::' ':::::.
+	   *       .::'        :::::.:::::::::'      ':::::.
+	   *      .::'         ::::::::::::::'         ``::::.
+	   *  ...:::           ::::::::::::'              ``::.
+	   * ```` ':.          ':::::::::'                  ::::..
+	   *                    '.:::::'                    ':'````..
+	   */
+  </script>
+</html>
