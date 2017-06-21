@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态新闻</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/news-5.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon"/>
+</head>
+<body>
+<div class="nav">
+    <div class="midnav">
+        <span><a href="http://www.runnongjinfu.com"><img src="../img/runnonglogo.png" title="润农金服官网"/></a></span>
+        <ul class="navbar">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="news.html">新闻</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <p style="text-align: center;color:#19783e;font-size:33px;margin-bottom: 20px">让农户得到真正的实惠，润及万家，这就是润农金服的企业初衷！</p>
+    <p class="textIndent">我们都来自农村，农民就是我们的亲人，农民的问题、农产品的问题，关系到千千万万的家庭，关系到社会的发展。农业的发展需要我们一起努力，农村的发展才是社会进步的最终发展！</p>
+    <p class="fontColor">农业市场规模</p>
+    
+    <img src="../img/guimo.png" alt="">
+    <p class="textIndent">解决传统农业的问题主要方向在产业升级与整合，需要结合中国特色的环境来进行 提高质效的关键在于农业生产和流通环节，现有环境决定了这个过程势必要深入到农村乃至农民个体 未来农产业链整合是大势所趋，但对生产单位的整合，短期内需要尽量保持现有的农村与农民结构。</p>
+    <p class="fontColor">农业市场痛点</p>
+    <img src="../img/tonddian.png"/>
+    
+    <p class="textIndent">润农金服致力于新型农业生产模式，以“统一订单农业，集约化生产、金融服务渗透”。按照订单需求把农民、土地集约化，发挥规模效应，优化农业产业链，提升劳动生产效率，保障农产品质量，给市场提供更好的农业产品，通过一站式金融服务解决农业、农民的生产、生活问题。</p>
+    <p class="fontColor">商业模式</p>
+    <img src="../img/shangye.png" />
+    <p>农村服务站</p>
+    <p class="textIndent">   通过农业信息化的应用，获取关于农业生产相关的重要数据（例如天气、地理、耕种 、施肥、施药、生长、收割等），向农民提供个性化的服务解决方案如施肥灌溉等， 并获取下游订单实现反向指导农民生产种植，服务生产、贸易与流通全流程</p>
+    <p>农业研究院</p>
+    <p class="textIndent">考察作物的经济效益、市场需求和土地条件，科学选 种，并提供最优的种植建议与咨询 实时观测环境情况（如土壤湿度、气温等），并跟踪 分析市场情况（如农作物贸易、上下游产业情况等</p>
+    <p>金融服务</p>
+    <p class="textIndent">金融服务 依托润农对农民生产过程的把 控，向农民、农资经销商、农 产品经销商提供各类金融产品 与服务，包括借贷、证券化等。</p>
+
+    <p class="fontColor">盈利模式</p>
+    <img src="../img/yingli.jpg"/>
+    <P class="textIndent">通过农资器具租赁和生产指导绑定农户，直接对接终端订单提高农业生产流通质效</P>
+  
+    <img src="../img/bottom.jpg"/>
+</html>

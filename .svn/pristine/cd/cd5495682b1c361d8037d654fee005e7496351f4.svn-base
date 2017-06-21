@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态新闻</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/news-5.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon"/>
+</head>
+<body>
+<div class="nav">
+    <div class="midnav">
+        <span><a href="http://www.runnongjinfu.com"><img src="../img/runnonglogo.png" title="润农金服官网"/></a></span>
+        <ul class="navbar">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="news.html">新闻</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <p style="text-align: center;color:#19783e;font-size:36px;margin-bottom: 20px">农民为什么“循环贫困”？</p>
+    <img src="../img/img5-1.jpg" alt="循环贫困">
+    <p>首先</p>
+    <p>是农户征信缺失，农村70%的农户是“白户”;另外，农户单笔贷款额度高，例如买一台农机十几万，自己首付6、7万后需要金融服务，但农村信贷无法按小额消费金融模式操作，因为没有房产等，无法判断风险。</p>
+    <p>其次</p>
+    <p>缺少可以抵押的固定资产。规模化生产后，种植大户租来的土地不归其所有，没有土地权限就无法办流转担保，对于大量的规模化生产的农户来说，通过土地质押实现经融杠杆是不现实的。</p>
+    <p>最后</p>
+    <p>农村的网络化程度滞后，信息搜集大多靠落地收集，成本较高。</p>
+    <img src="../img/img5-2.jpg" alt="">
+    <img src="../img/img5-3.jpg" alt="">
+    <p style="text-align: center">润农金服解决农民需求</p>
+    <img src="../img/img5-4.jpg" alt="">
+    <p>基于农业自身发展规律的必然选择同大中型企业的融资需求相比，三农的小微客户的融资需求通常体现出短、频、快、急的特点，润农金服纵向层级少、决策链条短，可以有效切合该类客户融资特点。而且，润农小微贷款具有单笔额度小、期限灵活的零售性业务特点，能有效分散经营风险。可见，润农金服在农村金融领域，有利于其发挥自身业务先发优势，率先占领经营“高地”。</p>
+</div>
+</body>
+</html>

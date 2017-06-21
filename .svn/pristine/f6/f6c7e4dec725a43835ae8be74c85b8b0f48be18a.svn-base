@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态新闻</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/news-5.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon"/>
+</head>
+<body>
+<div class="nav">
+    <div class="midnav">
+        <span><a href="http://www.runnongjinfu.com"><img src="../img/runnonglogo.png" title="润农金服官网"/></a></span>
+        <ul class="navbar">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="news.html">新闻</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <p style="text-align: center;color:#19783e;font-size:36px;margin-bottom: 20px">下一个风口会是互联网农业金融吗？</p>
+    <p class="textIndent">在互金领域，客观的说，已经形成了大佬级全方位的平台，如陆金所、宜信、玖富等。作为后发者，想要突围，就必须在某一细分领域，深耕劳作，“小而美”的平台才有可能诞生。</p>
+    <img src="../img/img6-1.jpg" alt="农业金融">
+    <p class="textIndent">农业板块，历来都有国家政策支持，但始终由于某些原因，未能形成比较大气候。笔者梳理一下这些年的农业政策：</p>
+    <p class="textIndent">或许是力度不大，或许是风口不对，总之在过往，农业领域没有获得相应较大的发展。</p>
+    <img src="../img/img6-2.jpg" alt="">
+    <p class="textIndent">趁着“互联网+”之风，笔者认为，农业互金领域，也将可能是下一个风口</p>
+    <p class="textIndent">下面像大家介绍一个新兴的农业金融平台—润农金服！</p>
+    <img src="../img/img6-3.jpg" alt="">
+    <p>1、资源优势</p>
+    <p class="textIndent">平台都有一定的农业资源背景</p>
+    <p class="textIndent">公司团队由百度、消费金融公司、恒生电子等高管组成，有多年的金融从业经验和创业经验（这个是做此细分领域最重要的因素），相关资源比较丰富。其中润农金服成立之初已经获得相关投资。</p>
+    <p>2、团队优势</p>
+    <p class="textIndent">团队均比较年轻，朝气蓬勃，充满活力和创新，小编以为肯做农村金融的市场，能深耕细作的人，一般靠谱踏实；</p>
+    <p>3、行业优势3、行业优势</p>
+    <p class="textIndent">润农金服致力于三农（农业、农村、农民）金融服务，为农业产业链提供金融服务。</p>
+    <p class="textIndent">截止到2016年11月，业务覆盖山西、河南、山东等省份，签约农户近万户，签约种植面积近10万亩，签约贷款金额8000万。</p>
+    <p class="textIndent">在2016年10月底成立润农金融惠农网点数十家，预计在2016年12月底成立润农金融惠民网点200个。计划在2017年底成立润农金服惠农点3000个。润农金服惠农点为农民提供各种便利的金融服务，包括小额现金借贷、汽车金融、房屋建设装修、家用电器分期、婚丧嫁娶相关等分期服务。</p>
+    <img src="../img/img6-4.jpg" alt="">
+    <p>机会：主要分析外部环境机会和潜在发力点</p>
+    <p>1、先发优势</p>
+    <p class="textIndent">目前是农业互联网金融垂直领域是一片蓝海，有着先发优势。对于那些后来的竞争者，产生进入壁垒，这方面这两家有着天然优势。</p>
+    <p>2、风口之上</p>
+    <p class="textIndent">P2P行业目前处在风口上，风投界为之疯狂，处在浪潮之巅，“互联网+”的概念随着普惠金融遍地开花；</p>
+    <p class="textIndent">最近上市公司只要触网（互联网金融），股票随之就会涨停。而目前没有哪家农业板块的上市公司触网，小编认为它们完全可以去投资控股这些农业互金公司，形成纵向联合，产生协同效应。想想这个概念，小编都为之疯狂。</p>
+    <p>3、国家支持</p>
+    <p class="textIndent">三农板块目前是国家重点扶持的民生行业，政府在这方大力推动，在新农业概念的渲染下，各地农村乡政府为了政绩也会大力支农业互金行业。</p>
+</div>
+</body>
+</html>

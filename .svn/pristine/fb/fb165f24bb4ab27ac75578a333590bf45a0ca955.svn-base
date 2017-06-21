@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态新闻</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon"/>
+</head>
+<body>
+<div class="nav">
+    <div class="midnav">
+        <span><a href="http://www.runnongjinfu.com"><img src="../img/runnonglogo.png" title="润农金服官网"/></a></span>
+        <ul class="navbar">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="news.html">新闻</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="content">
+        <h1 style="text-align: center;color:#19783e;font-size:34px;margin-bottom: 20px">拓宽农民致富渠道，发展辣椒种植合作社</h1>
+        <p>北京润农金服科技有限公司响应国家号召，大力发展农业种植，为更好地调整产业结构，进一步增加农民收入，携手山西晋运红种植公司在山西省南唐乡北唐村合作社发展辣椒种植！</p>
+        <img src="../img/img1.jpg" class="img1">
+        <p>通过外出考察，与山西晋运红种植公司达成合作协议，先后在北唐、南唐、南丁、西下坪、凡店等村发放资料广泛宣传，并组织有种植意向的农户进行技术培训，最终与农户签订了1500余亩的种植合同。合作采用“企业+基地+农户”的运作模式，种植前期先由公司垫付种籽、化肥、农药、地膜等物资费用共计800元，在辣椒成熟后以保护价每斤1.2元回收，每亩预计最低产量在3500斤左右，仅此一项可为农民增收600万元。</p>
+        <p>在南唐开办辣椒种植培训班</p>
+        <img src="../img/img2.jpg" class="img2">
+        <img src="../img/img3.jpg" class="img3">
+        <img src="../img/img4.jpg" class="img4">
+        <img src="../img/img5.jpg" class="img5">
+        <p style="text-align: center;margin-top:10px;margin-bottom:10px;display: block;color:#f66;">南唐乡领导干部带领部分村干部到种植公司闻喜辣椒种植基地考察观摩</p>
+        <img src="../img/img6.jpg" class="img6">
+        <p style="margin-top:10px;margin-bottom:10px;text-align:center;display: block;color:#f66;">种植基地里正在组织农民进行采摘</p>
+        <img src="../img/img7.jpg" class="img7">
+        <p style="margin-top:10px;margin-bottom:10px;text-align:center;display: block;color:#f66;">红红火火的辣椒真喜人呐</p>
+        <img src="../img/img8.jpg" class="img8">
+        <p style="margin-top:10px;margin-bottom:10px;text-align:center;display: block;color:#f66;">公司与农户签订种植合同</p>
+        <img src="../img/img9.jpg" class="img9">
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态新闻</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/news-5.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon"/>
+</head>
+<body>
+<div class="nav">
+    <div class="midnav">
+        <span><a href="http://www.runnongjinfu.com"><img src="../img/runnonglogo.png" title="润农金服官网"/></a></span>
+        <ul class="navbar">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="news.html">新闻</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <p style="text-align: center;color:#19783e;font-size:36px;margin-bottom: 20px">我国摸索出多种农村一二三产业融合发展模式</p>
+    <p class="textIndent">中国财政部20日对外公布消息说，去年中央财政专项安排12亿元人民币，支持安徽、重庆等12个省(直辖市)开展农村一二三产业融合发展试点工作。各地积极探索，大胆创新，摸索出多种农村一二三产业融合发展模式。这些模式包括：</p>
+    <img src="../img/img14-1.png" alt="">
+    <p class="fontColor">农业内部有机融合模式</p>
+    <p class="textIndent">以农牧结合、农林结合、循环发展为导向，调整优化农业种植养殖结构，发展高效、绿色农业，以高效益、新品种、新技术、新模式为主要内容的“一高三新”农业蓬勃发展，一些传统资源、农业废弃物被综合利用，农业潜力被激发。</p>
+    <p class="fontColor">全产业链发展融合模式</p>
+    <p class="textIndent">从建设种植基地，到农产品加工制作，到仓储智能管理、市场营销体系打造，再到农业休闲、乡村旅游，品牌建设，行业集聚等，形成一条龙发展的“全产业链”。</p>
+    <img src="../img/img14-2.png" alt="">
+    <p class="fontColor">农业功能拓展融合模式</p>
+    <p class="textIndent">在稳定传统农业的基础上，不断拓展农业功能，推进农业与旅游、教育、文化、健康养生等产业深度融合，打造具有历史、地域、民族特点的旅游村镇或乡村旅游示范村，积极开发农业文化遗产，推进农耕文化教育进学校。</p>
+    <p class="fontColor">科技渗透发展融合模式</p>
+    <p class="textIndent">在推动现代农业发展中，大力推广引入互联网技术、物联网技术，引进先进技术生产栽培模式等，实现现代先进科技与农业产业的融合发展。</p>
+    <p class="fontColor">产业集聚型发展融合模式</p>
+    <p class="textIndent">随着农业产业发展规模的逐步提高，特别是一乡(县)一业、一村一品的发展，产业发展呈现集聚态势，产业、产品品牌和价值不断壮大，实现产业发展与经济发展的协调推进。</p>
+    <p class="textIndent">财政部表示，通过试点，农村产业融合蓬勃发展，产业链条持续延伸，农业功能加快拓展，新型业态不断涌现，产业融合发展正在成为农村创新创业的热点和亮点，在促进农业增效、农民增收、农村繁荣方面的作用和效果日益显现。下一步，财政部将会同农业部，创新思路方法，推进农村一二三产业融合发展。</p>
+    <img src="../img/img14-3.png" alt="" />
+    <p class="textIndent"> 另据去年初发布的《国务院办公厅关于推进农村一二三产业融合发展的指导意见》，中国希望到2020年，农村产业融合发展总体水平明显提升，产业链条完整、功能多样、业态丰富、利益联结紧密、产城融合更加协调的新格局基本形成，农业竞争力明显提高，农民收入持续增加，农村活力显著增强。</p>
+</body>
+</html>

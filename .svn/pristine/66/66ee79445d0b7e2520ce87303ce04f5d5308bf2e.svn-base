@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>分享</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon"/>
+      <script>
+          //设置当前页面所用的rem；基于iphone5的尺寸进行开发，适配其他机型
+          var winWidth = window.innerWidth;
+          console.log(winWidth);
+          var fontSize = Math.floor( winWidth/320*100 );
+          console.log(fontSize);
+          var html = document.documentElement;
+          html.style.fontSize = fontSize + 'px';
+          window.onresize = function(){
+              var winWidth = window.innerWidth;
+              var fontSize = Math.floor( winWidth/320*100 );//设置与当前尺寸页面适应的字号
+              var html = document.documentElement;
+              html.style.fontSize = fontSize + 'px';
+              console.log(html.tagName);
+          };
+      </script>
+
+  </head>
+  <style type="text/css">
+      *{
+          margin: 0;
+          padding:0;
+      }
+      html,body{
+          width:100%;
+          font-size:100px;
+      }
+      .page-group {
+          width:100%;
+          height:100%;
+      }
+      .page-current{
+          width:100%;
+          height:100%;
+      }
+  </style>
+  <body>
+    <div class="page-group">
+        <div class="page page-current">
+        <!-- 你的html代码 -->
+         <img src="../img/sucess_sign-1.png" style="width:100%;"/>
+         <nav style="margin-top: .1rem;text-indent: .28rem;font-size:.14rem">尊敬的<span class="phone" style="font-size:.14rem">13521986066</span>用户,恭喜您成功注册先花</nav>
+         <nav style="font-size:.14rem">钱,快去小借一笔试试吧~</nav>
+         <a href="#">
+         <img class="download" src="../img/download_APP.png" style="display: block;height:.44rem;margin: auto;margin-top: .06rem;"/>
+         </a>
+        </div>
+    </div>
+  </body>
+  <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  	$('.download').click(function(){
+  		window.location.href="/app/xianhuaqian1.2.3.apk"
+  	});
+   var num=$.cookie('phone_number');
+		   $('.phone').html(num);
+  </script>
+</html>

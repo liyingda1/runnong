@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态新闻</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/news-5.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon"/>
+</head>
+<body>
+<div class="nav">
+    <div class="midnav">
+        <span><a href="http://www.runnongjinfu.com"><img src="../img/runnonglogo.png" title="润农金服官网"/></a></span>
+        <ul class="navbar">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="news.html">新闻</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <p style="text-align: center;color:#19783e;font-size:36px;margin-bottom: 20px">【润农金服 】山西运城技术员们指导农户移栽辣椒苗</p>
+    <img src="../img/img-19-1.jpg" alt="">
+<!--    <p class="fontColor">行业大趋判断：红海还是蓝海</p>-->
+    <p class="textIndent">在上一期我们也报道了和润农金服合作的农户们辣椒已经培育出苗，现在山西运城技术员们，正在现场指导当地农户移栽辣椒苗！</p>
+    <img src="../img/img-19-2.jpg" alt="" />
+    <p class="textIndent">农户们正在积极的学习着，认真按照技术员的要求：铺地、封膜、移栽和浇灌等等。</p>
+    <img src="../img/img-19-3.jpg"  alt="" />
+    <p class="textIndent">辣椒苗移栽重点：</p>
+    <p class="textIndent">  地整理好后，铺盖地膜前，打一遍除草剂，每亩一瓶除草剂（椒封）配60斤水，打在地膜下面效果最好，地膜铺好后，两边栽辣椒，要栽地膜里头，苗的深度为5-8公分，每穴单苗，把土盖实，开始浇定苗水，浇定苗水时配公司发放的（灌地宽）每亩一瓶，专治地下害虫。</p>
+    <img src="../img/img-19-4.jpg"  alt="" />
+     <img src="../img/img16-7.png"  alt="" />
+</body>
+</html>
